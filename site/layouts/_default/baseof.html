@@ -3,7 +3,11 @@
   {{ partial "head" . }}
   <body class="sans-serif">
 
-    {{ block "header" . }}{{ partial "nav" . }}{{end}}
+    {{ block "header" . }}
+      {{ partial "brand" . }}
+      {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
+      {{ partial "nav" . }}
+    {{end}}
 
     {{ block "main" . }}{{ end }}
 
