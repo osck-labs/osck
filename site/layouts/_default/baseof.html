@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
   {{ partial "head" . }}
-  <body class="sans-serif">
+  <body>
 
     {{ block "header" . }}
       {{ partial "brand" . }}
-      {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
+      {{ partial "jumbotron" (dict "title" "Osck Estética" "subtitle" "Subtítulo da home") }}
       {{ partial "nav" . }}
     {{end}}
-
+<!-- 
     {{ block "main" . }}{{ end }}
 
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}} -->
 
     {{ $script := .Site.Data.webpack.main }}
     {{ with $script.js }}

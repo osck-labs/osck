@@ -1,0 +1,55 @@
+@import "bootstrap/scss/bootstrap";
+//@import "../css/main.css";
+
+// :root {
+// 	/* Colors */
+// 	--highlight: rgba(254, 213, 198, 1);
+// 	--white: rgba(255, 255, 255, 1);
+// 	--off-white: rgba(255, 253, 252, 1);
+// 	--dark-green: rgb(28,71,32);
+// 	--medium-green: rgb(70,152,36);
+// 	--light-green: #7eb339;
+// 	--black: rgba(43, 37, 35, 1);
+// }
+
+$dark-green: rgb(28,71,32);
+$light-green: #7eb339;
+$medium-green: rgb(70,152,36);
+
+.nav-brand {
+  background-color: $dark-green;
+  overflow: hidden;
+  height: 80px; 
+}
+
+.social-buttons {
+  list-style: none;
+}
+
+.jumbotron {
+  background: url("/images/hero.jpg") no-repeat right, linear-gradient(to right, $medium-green, $light-green);
+  height: 375px;
+}
+
+.font-weight-bold {
+  font-weight: 500 !important;
+}
+
+.main-nav {
+  background: linear-gradient(#BCBCBC, #fff)
+}
+
+.nav-link {
+  color: $gray-800;
+}
+
+.nav-link:hover {
+  color: $gray-600;
+}
+
+//descobrir como remover do primeiro elemento
+.nav-link::before {
+  content: "•"; 
+  color: green;
+  margin-right: 30px;
+}

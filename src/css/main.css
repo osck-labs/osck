@@ -2,4 +2,4 @@
 /* Importing here will allow you to override any variables in the modules */
 @import './imports/_colors';
 @import './imports/_variables';
-@import './imports/_reset.css';
+@import './imports/_style';

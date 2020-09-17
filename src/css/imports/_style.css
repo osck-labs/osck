@@ -1,0 +1,35 @@
+li {
+  list-style-type: none;
+}
+
+.nav-brand {
+  background-color: var(--dark-green);
+  overflow: hidden;
+  height: 80px; 
+}
+
+.green {
+  /* background-color: green !important; */
+  /* background-image: url("/img/HeroImage.jpg"); */
+  background: radial-gradient(green, var(--dark-green));
+  background-repeat: no-repeat;
+  padding: 0 !important;
+}
+
+.white {
+  color: var(--white);
+}
+
+.menu {
+  background: radial-gradient(gray, var(--white));
+  height: 50px;
+}
+
+a, a:link, a:hover, a:active a:any-link {
+  color: var(--black) !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
