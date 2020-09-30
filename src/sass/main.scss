@@ -58,6 +58,10 @@ $black: #000;
   margin-right: 30px;
 }
 
+li:first-of-type > a::before {
+  content: "";
+}
+
 .contact-form {
   @media (min-width: 760px) {
     margin: 3% 0;
@@ -165,4 +169,19 @@ footer > div {
   }
 
   text-align: justify;
+}
+
+.menu {
+  @media (min-width: 760px) {
+    display: none; 
+  }
+
+  padding: 10px 0 5px 0;
+  margin: 5px 0 0 0;
+}
+
+.navigation {
+  @media (max-width: 760px) {
+    display: none; 
+  }
 }
