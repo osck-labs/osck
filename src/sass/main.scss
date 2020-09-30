@@ -59,10 +59,14 @@ $black: #000;
 }
 
 .contact-form {
+  @media (min-width: 760px) {
+    margin: 3% 0;
+    width: 50%;
+  }
   color: $white;
+  margin: 10% 0;
+  width: 80%;
   float: right;
-  margin: 3% 0;
-  width: 25%;
 }
 
 .contact {
@@ -73,6 +77,9 @@ $black: #000;
   -moz-background-size: cover;
   background-size: cover;
   height: 400px;
+  @media (max-width: 760px) {
+    min-height: 450px;
+  }
 }
 
 input[type="text"],
@@ -109,6 +116,14 @@ input::placeholder {
   border-bottom: 2px solid $dark-green;
 }
 
+.insta-icon {
+  @media (max-width: 760px) {
+    display: none;
+  }
+
+  text-align: right;
+}
+
 hr {
   border-top: 2px solid $black;
 }
@@ -122,5 +137,32 @@ hr {
 
 footer {
   background: linear-gradient($medium-green, $light-green);
-  height: 200px;
+}
+
+footer > div {
+  @media (max-width: 760px) {
+    text-align: center;
+  }
+
+  @media (min-width: 760px) {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    text-align: start;
+  }
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 100%;
+}
+
+.footer-section {
+  @media (max-width: 760px) {
+    text-align: center;
+  }
+
+  text-align: justify;
 }
